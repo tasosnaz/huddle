@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("./images/bg-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -11vh;
+
+}    
+
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+    font-weight: bold;
+  
+    color: #fff;
+}
+  
+h4 {
+   color: #fff;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 100;
+   opacity: 0.8;
+   font-size: 17px;
+}
+
+img {
+  width: 800px;
+}
+
+/**** MAIN-SECTION ***/
+
+.container {
+    display: flex;
+    max-width: 100%;
+    margin: 0;
+    margin-top: 50px;
+}
+
+.logo {
+ margin-top: 100px;
+ margin-left: 209px;  
+ width: 12%; 
+
+}
+
+.image {
+  margin-left: 210px;
+  margin-right: 50px;
+  
+}
+
+.text {
+    margin-right: 100px;
+    width: 550px;
+    margin-top: 20px;
+}
+
+
+/*** BUTTON ***/
+
+.myButton {
+	box-shadow: 0px 3px 15px 1px #594a7c;
+	background-color:#ffffff;
+	border-radius:28px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#7454bf;
+	font-family: 'Poppins', sans-serif;
+	font-size:17px;
+	padding:14px 67px;
+	text-decoration:none;
+	text-shadow:0px 1px 4px #9792a3;
+}
+.myButton:hover {
+	background-color:#fffcff;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.icons {
+    list-style-type:  none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 300px;
+    padding: 0;
+    font-size: 20px;
+}
+  
+  .icons a {
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid  #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    text-decoration: none;
+    margin-left: 20px;
+  
+}
+
+footer {
+      text-align: center;
+}
+
+/*** Mobile Sizing ***/
+
+@media (max-width: 1128px) {
+    body {
+        background-image: url("./images/bg-mobile.svg");
+        background-position: top;
+        background-size: contain;
+        padding: 25px 20px 0px 20px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .text {
+        text-align: center;
+        width: 100%;
+        margin-top: 0;
+        
+    }
+
+    .logo {
+      width: 30%;;
+      text-align: center;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    .icons {
+        text-align: center;
+    }
+}
